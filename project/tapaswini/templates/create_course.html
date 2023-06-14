@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block data %}
+<form method="post" action="/create_course">
+    {% csrf_token %}
+    <table>
+        <tr>
+            <td>cname</td>
+            <td><input type="text" name="cname"></td>
+        </tr>
+        <tr>
+            <td>cdur</td>
+            <td><input type="number" name="cdur"></td>
+        </tr>
+        <tr>
+            <td>cprice</td>
+            <td><input type="text" name="cprice"></td>
+        </tr>
+        <tr>
+            <td><input type="submit" name="same" value="create_course"></td>
+        </tr>
+    </table>
+    
+</form>
+
+{% endblock %}

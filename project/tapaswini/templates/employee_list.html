@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h2>Employee List</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Designation</th>
+        <th>Age</th>
+        <th>Join Date</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>{{ employee.name }}</td>
+          <td>{{ employee.designation }}</td>
+          <td>{{ employee.age }}</td>
+          <td>{{ employee.join_date }}</td>
+        </tr>
+    </tbody>
+  </table>
+{% endblock %}

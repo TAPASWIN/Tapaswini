@@ -1,0 +1,3 @@
+function indexclick(){
+    alert("Woww!")
+}
